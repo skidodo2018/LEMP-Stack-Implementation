@@ -28,7 +28,7 @@ Prerequisites:
 
 ![](/images2/sshEC2.png)
 
-# **Step 1 – Installing the Nginx Web Server**
+### Step 1 – Installing the Nginx Web Server ###
 
 In this step, we will be installing the Niginx web server in order to display web pages to our site visitors. Nginx is a high-performance web server. We’ll use the **`apt`** package manager to install this package.
 
@@ -84,7 +84,7 @@ Now that the web server is up and running, the next step will be to install a Da
 
 This will let you exit the mysql command prompt.
 
-# **Step 3 – Installing PHP**
+### Step 3 – Installing PHP ###
 
 We have installed Nginx to serve our content and MySQL has been installed to store and manage our data. Now we will install [PHP](https://www.php.net/) to process code and generate dynamic content for the web server.
 
@@ -98,7 +98,7 @@ When prompted, type `Y` and press `ENTER` to confirm installation.
 
 You now have your PHP components installed. Next, you will configure Nginx to use them.
 
-# **Step 4 — Configuring Nginx to Use PHP Processor**
+### Step 4 — Configuring Nginx to Use PHP Processor ###
 
 When using the Nginx web server, we can create server blocks (similar to virtual hosts in Apache) to encapsulate configuration details and host more than one domain on a single server. In this guide, we will use **projectLEMP** as an example domain name.
 
@@ -200,7 +200,7 @@ You can leave this file in place as a temporary landing page for your applicatio
 
 Our LEMP stack is now fully configured. In the next step, we’ll create a PHP script to test that Nginx is in fact able to handle `.php` files within your newly configured website.
 
-# **Step 5 – Testing PHP with Nginx**
+### Step 5 – Testing PHP with Nginx ###
 
 Our LEMP stack should now be completely set up.
 
@@ -229,7 +229,7 @@ After checking the relevant information about the PHP server through that page, 
 
 This file can always be regenerated later if needed.
 
-# **Step 6 — Retrieving data from MySQL database with PHP**
+### Step 6 — Retrieving data from MySQL database with PHP ###
 
 In this step we will create a test database (DB) with simple “To do list” and configure access to it, so the Nginx website would be able to query data from the DB and display it.
 
@@ -324,3 +324,38 @@ You should see a page like this, showing the content you’ve inserted in your t
 ![](/images2/todo.png)
 
 With this, our PHP environment is ready to connect and interact with our MySQL server.
+
+```
+
+
+                                ,.        ,.      ,.
+                                ||        ||      ||  ()
+ ,--. ,-. ,.,-.  ,--.,.,-. ,-.  ||-.,.  ,.|| ,-.  ||-.,. ,-. ,.,-.  ,--.
+//`-'//-\\||/|| //-||||/`'//-\\ ||-'||  ||||//-\\ ||-'||//-\\||/|| ((`-'
+||   || |||| ||||  ||||   || || ||  || /|||||| || ||  |||| |||| ||  ``.
+\\,-.\\-//|| || \\-||||   \\-|| ||  ||//||||\\-|| ||  ||\\-//|| || ,-.))
+ `--' `-' `' `'  `-,|`'    `-^-``'  `-' `'`' `-^-``'  `' `-' `' `' `--'
+                  //           .--------.
+              ,-.//          .: : :  :___`.
+              `--'         .'!!:::::  \\_\ `.
+                      : . /%O!!::::::::\\_\. \
+                     [""]/%%O!!:::::::::  : . \
+                     |  |%%OO!!::::::::::: : . |
+                     |  |%%OO!!:::::::::::::  :|
+                     |  |%%OO!!!::::::::::::: :|
+            :       .'--`.%%OO!!!:::::::::::: :|
+          : .:     /`.__.'\%%OO!!!::::::::::::/
+         :    .   /        \%OO!!!!::::::::::/
+        ,-'``'-. ;          ;%%OO!!!!!!:::::'
+        |`-..-'| |   ,--.   |`%%%OO!!!!!!:'
+        | .   :| |_.','`.`._|  `%%%OO!%%'
+        | . :  | |--'    `--|    `%%%%'
+        |`-..-'| ||   | | | |     /__\`-.
+        \::::::/ ||)|/|)|)|\|           /
+---------`::::'--|._ ~**~ _.|----------( -----------------------
+           )(    |  `-..-'  |           \    ______
+           )(    |          |,--.       ____/ /  /\\ ,-._.-'
+        ,-')('-. |          |\`;/   .-()___  :  |`.!,-'`'/`-._
+       (  '  `  )`-._    _.-'|;,|    `-,    \_\__\`,-'>-.,-._
+        `-....-'     ````    `--'      `-._       (`- `-._`-.   hjw
+```
